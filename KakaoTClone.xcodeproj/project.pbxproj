@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F322E3122C8C2BB0006A8815 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F322E3112C8C2BB0006A8815 /* GoogleService-Info.plist */; };
+		F322E3142C8C2DC1006A8815 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F322E3132C8C2DC1006A8815 /* FirebaseAnalytics */; };
+		F322E3162C8C37AC006A8815 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F322E3152C8C37AC006A8815 /* FirebaseFirestore */; };
+		F322E31C2C8CB5DA006A8815 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322E31B2C8CB5DA006A8815 /* FirestoreService.swift */; };
+		F322E31E2C8D83EC006A8815 /* VillageTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322E31D2C8D83EB006A8815 /* VillageTagViewModel.swift */; };
+		F322E3252C930F10006A8815 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322E3242C930F10006A8815 /* MapView.swift */; };
+		F322E3282C930F98006A8815 /* CustomAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322E3272C930F98006A8815 /* CustomAppBar.swift */; };
+		F344B8E92C9AE39F00AB06CC /* AutoFocusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344B8E82C9AE39F00AB06CC /* AutoFocusTextField.swift */; };
+		F36B26AF2C89D7D400AEFB37 /* KakaoTCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B26AE2C89D7D400AEFB37 /* KakaoTCloneApp.swift */; };
+		F36B26B12C89D7D400AEFB37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B26B02C89D7D400AEFB37 /* ContentView.swift */; };
+		F36B26B32C89D7D400AEFB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36B26B22C89D7D400AEFB37 /* Assets.xcassets */; };
+		F36B26B62C89D7D400AEFB37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36B26B52C89D7D400AEFB37 /* Preview Assets.xcassets */; };
+		F36B26BE2C89D7ED00AEFB37 /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = F36B26BD2C89D7ED00AEFB37 /* KakaoMapsSDK-SPM */; };
+		F36B26C02C89D81500AEFB37 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B26BF2C89D81500AEFB37 /* APIKeys.swift */; };
+		F37BA1852C97328800C5670D /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA1842C97328800C5670D /* BottomSheetView.swift */; };
+		F37BA1872C97426E00C5670D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA1862C97426E00C5670D /* PostView.swift */; };
+		F37BA18B2C99DB4500C5670D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA18A2C99DB4500C5670D /* Category.swift */; };
+		F37BA18D2C99E03D00C5670D /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA18C2C99E03D00C5670D /* CreatePostView.swift */; };
+		F398B0862C958A0500D8DAB1 /* KakaoTRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398B0852C958A0500D8DAB1 /* KakaoTRepositoryInterface.swift */; };
+		F398B0882C9590A600D8DAB1 /* VillageTagUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398B0872C9590A600D8DAB1 /* VillageTagUseCase.swift */; };
+		F3A265982C9C3C6700D42082 /* FeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A265972C9C3C6700D42082 /* FeedEntity.swift */; };
+		F3A2659A2C9C3E3100D42082 /* FeedDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A265992C9C3E3100D42082 /* FeedDTO.swift */; };
+		F3A2659C2C9C435900D42082 /* feedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2659B2C9C435900D42082 /* feedUseCase.swift */; };
+		F3A2659E2C9C43F600D42082 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2659D2C9C43F600D42082 /* FeedViewModel.swift */; };
+		F3A265A12C9C8AA800D42082 /* MockFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A265A02C9C8AA800D42082 /* MockFeedService.swift */; };
+		F3DFB9742C89DB7300D9C22B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFB9732C89DB7300D9C22B /* MapViewModel.swift */; };
+		F3E0E62D2C95745B00755CB9 /* VillageTagDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E62C2C95745B00755CB9 /* VillageTagDto.swift */; };
+		F3E0E6302C9579BB00755CB9 /* VillageTagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E62F2C9579BB00755CB9 /* VillageTagEntity.swift */; };
+		F3F97F7B2C9B3B510098B8FF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F97F7A2C9B3B510098B8FF /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F322E3112C8C2BB0006A8815 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F322E31B2C8CB5DA006A8815 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		F322E31D2C8D83EB006A8815 /* VillageTagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageTagViewModel.swift; sourceTree = "<group>"; };
+		F322E3242C930F10006A8815 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F322E3272C930F98006A8815 /* CustomAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppBar.swift; sourceTree = "<group>"; };
+		F344B8E82C9AE39F00AB06CC /* AutoFocusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextField.swift; sourceTree = "<group>"; };
+		F36B26AB2C89D7D400AEFB37 /* KakaoTClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36B26AE2C89D7D400AEFB37 /* KakaoTCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTCloneApp.swift; sourceTree = "<group>"; };
+		F36B26B02C89D7D400AEFB37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F36B26B22C89D7D400AEFB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36B26B52C89D7D400AEFB37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F36B26BF2C89D81500AEFB37 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		F37BA1842C97328800C5670D /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		F37BA1862C97426E00C5670D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F37BA18A2C99DB4500C5670D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F37BA18C2C99E03D00C5670D /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		F398B0852C958A0500D8DAB1 /* KakaoTRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTRepositoryInterface.swift; sourceTree = "<group>"; };
+		F398B0872C9590A600D8DAB1 /* VillageTagUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageTagUseCase.swift; sourceTree = "<group>"; };
+		F3A265972C9C3C6700D42082 /* FeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntity.swift; sourceTree = "<group>"; };
+		F3A265992C9C3E3100D42082 /* FeedDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDTO.swift; sourceTree = "<group>"; };
+		F3A2659B2C9C435900D42082 /* feedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedUseCase.swift; sourceTree = "<group>"; };
+		F3A2659D2C9C43F600D42082 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		F3A265A02C9C8AA800D42082 /* MockFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFeedService.swift; sourceTree = "<group>"; };
+		F3DFB9732C89DB7300D9C22B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F3E0E62C2C95745B00755CB9 /* VillageTagDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageTagDto.swift; sourceTree = "<group>"; };
+		F3E0E62F2C9579BB00755CB9 /* VillageTagEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageTagEntity.swift; sourceTree = "<group>"; };
+		F3F97F7A2C9B3B510098B8FF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F36B26A82C89D7D400AEFB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F322E3142C8C2DC1006A8815 /* FirebaseAnalytics in Frameworks */,
+				F36B26BE2C89D7ED00AEFB37 /* KakaoMapsSDK-SPM in Frameworks */,
+				F322E3162C8C37AC006A8815 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F322E31F2C8D856A006A8815 /* RemoteRepository */ = {
+			isa = PBXGroup;
+			children = (
+				F322E31B2C8CB5DA006A8815 /* FirestoreService.swift */,
+			);
+			path = RemoteRepository;
+			sourceTree = "<group>";
+		};
+		F322E3262C930F55006A8815 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F322E3272C930F98006A8815 /* CustomAppBar.swift */,
+				F37BA1862C97426E00C5670D /* PostView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F344B8E72C9AE38600AB06CC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F344B8E82C9AE39F00AB06CC /* AutoFocusTextField.swift */,
+				F3F97F7A2C9B3B510098B8FF /* ImagePicker.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F36B26A22C89D7D300AEFB37 = {
+			isa = PBXGroup;
+			children = (
+				F322E3112C8C2BB0006A8815 /* GoogleService-Info.plist */,
+				F36B26AD2C89D7D400AEFB37 /* KakaoTClone */,
+				F36B26AC2C89D7D400AEFB37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F36B26AC2C89D7D400AEFB37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F36B26AB2C89D7D400AEFB37 /* KakaoTClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F36B26AD2C89D7D400AEFB37 /* KakaoTClone */ = {
+			isa = PBXGroup;
+			children = (
+				F36B26AE2C89D7D400AEFB37 /* KakaoTCloneApp.swift */,
+				F3E0E6292C95739300755CB9 /* Presentation */,
+				F3E0E62A2C9573B700755CB9 /* Domain */,
+				F3E0E62B2C9573C700755CB9 /* Data */,
+				F3DFB97A2C8B49C100D9C22B /* Util */,
+				F36B26B22C89D7D400AEFB37 /* Assets.xcassets */,
+				F36B26B42C89D7D400AEFB37 /* Preview Content */,
+			);
+			path = KakaoTClone;
+			sourceTree = "<group>";
+		};
+		F36B26B42C89D7D400AEFB37 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F36B26B52C89D7D400AEFB37 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F398B0832C95884100D8DAB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F322E3242C930F10006A8815 /* MapView.swift */,
+				F37BA1842C97328800C5670D /* BottomSheetView.swift */,
+				F37BA18C2C99E03D00C5670D /* CreatePostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F398B0842C95884F00D8DAB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3DFB9732C89DB7300D9C22B /* MapViewModel.swift */,
+				F322E31D2C8D83EB006A8815 /* VillageTagViewModel.swift */,
+				F3A2659D2C9C43F600D42082 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3DFB97A2C8B49C100D9C22B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F36B26BF2C89D81500AEFB37 /* APIKeys.swift */,
+				F37BA18A2C99DB4500C5670D /* Category.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F3E0E6292C95739300755CB9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F344B8E72C9AE38600AB06CC /* Helper */,
+				F36B26B02C89D7D400AEFB37 /* ContentView.swift */,
+				F398B0842C95884F00D8DAB1 /* ViewModel */,
+				F398B0832C95884100D8DAB1 /* View */,
+				F322E3262C930F55006A8815 /* CustomView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F3E0E62A2C9573B700755CB9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F3E0E6352C95836C00755CB9 /* Interface */,
+				F3E0E6332C95833B00755CB9 /* UseCases */,
+				F3E0E62E2C95799E00755CB9 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F3E0E62B2C9573C700755CB9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F3E0E6312C957A9A00755CB9 /* DTO */,
+				F3E0E6322C957AC800755CB9 /* LocalRepository */,
+				F322E31F2C8D856A006A8815 /* RemoteRepository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F3E0E62E2C95799E00755CB9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F3E0E62F2C9579BB00755CB9 /* VillageTagEntity.swift */,
+				F3A265972C9C3C6700D42082 /* FeedEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F3E0E6312C957A9A00755CB9 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F3E0E62C2C95745B00755CB9 /* VillageTagDto.swift */,
+				F3A265992C9C3E3100D42082 /* FeedDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		F3E0E6322C957AC800755CB9 /* LocalRepository */ = {
+			isa = PBXGroup;
+			children = (
+				F3A265A02C9C8AA800D42082 /* MockFeedService.swift */,
+			);
+			path = LocalRepository;
+			sourceTree = "<group>";
+		};
+		F3E0E6332C95833B00755CB9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F398B0872C9590A600D8DAB1 /* VillageTagUseCase.swift */,
+				F3A2659B2C9C435900D42082 /* feedUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F3E0E6352C95836C00755CB9 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F3E0E6362C9583DD00755CB9 /* Repository */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		F3E0E6362C9583DD00755CB9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F398B0852C958A0500D8DAB1 /* KakaoTRepositoryInterface.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F36B26AA2C89D7D400AEFB37 /* KakaoTClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36B26B92C89D7D400AEFB37 /* Build configuration list for PBXNativeTarget "KakaoTClone" */;
+			buildPhases = (
+				F36B26A72C89D7D400AEFB37 /* Sources */,
+				F36B26A82C89D7D400AEFB37 /* Frameworks */,
+				F36B26A92C89D7D400AEFB37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoTClone;
+			packageProductDependencies = (
+				F36B26BD2C89D7ED00AEFB37 /* KakaoMapsSDK-SPM */,
+				F322E3132C8C2DC1006A8815 /* FirebaseAnalytics */,
+				F322E3152C8C37AC006A8815 /* FirebaseFirestore */,
+			);
+			productName = KakaoTClone;
+			productReference = F36B26AB2C89D7D400AEFB37 /* KakaoTClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F36B26A32C89D7D300AEFB37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F36B26AA2C89D7D400AEFB37 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = F36B26A62C89D7D300AEFB37 /* Build configuration list for PBXProject "KakaoTClone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F36B26A22C89D7D300AEFB37;
+			packageReferences = (
+				F36B26BC2C89D7ED00AEFB37 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
+				F3DFB97D2C8C29B400D9C22B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F36B26AC2C89D7D400AEFB37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F36B26AA2C89D7D400AEFB37 /* KakaoTClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F36B26A92C89D7D400AEFB37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B26B62C89D7D400AEFB37 /* Preview Assets.xcassets in Resources */,
+				F36B26B32C89D7D400AEFB37 /* Assets.xcassets in Resources */,
+				F322E3122C8C2BB0006A8815 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F36B26A72C89D7D400AEFB37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A265A12C9C8AA800D42082 /* MockFeedService.swift in Sources */,
+				F36B26C02C89D81500AEFB37 /* APIKeys.swift in Sources */,
+				F37BA18B2C99DB4500C5670D /* Category.swift in Sources */,
+				F398B0882C9590A600D8DAB1 /* VillageTagUseCase.swift in Sources */,
+				F3F97F7B2C9B3B510098B8FF /* ImagePicker.swift in Sources */,
+				F322E31C2C8CB5DA006A8815 /* FirestoreService.swift in Sources */,
+				F37BA18D2C99E03D00C5670D /* CreatePostView.swift in Sources */,
+				F322E3282C930F98006A8815 /* CustomAppBar.swift in Sources */,
+				F398B0862C958A0500D8DAB1 /* KakaoTRepositoryInterface.swift in Sources */,
+				F322E31E2C8D83EC006A8815 /* VillageTagViewModel.swift in Sources */,
+				F3DFB9742C89DB7300D9C22B /* MapViewModel.swift in Sources */,
+				F37BA1872C97426E00C5670D /* PostView.swift in Sources */,
+				F3E0E6302C9579BB00755CB9 /* VillageTagEntity.swift in Sources */,
+				F3A2659C2C9C435900D42082 /* feedUseCase.swift in Sources */,
+				F37BA1852C97328800C5670D /* BottomSheetView.swift in Sources */,
+				F3E0E62D2C95745B00755CB9 /* VillageTagDto.swift in Sources */,
+				F36B26B12C89D7D400AEFB37 /* ContentView.swift in Sources */,
+				F3A2659E2C9C43F600D42082 /* FeedViewModel.swift in Sources */,
+				F344B8E92C9AE39F00AB06CC /* AutoFocusTextField.swift in Sources */,
+				F322E3252C930F10006A8815 /* MapView.swift in Sources */,
+				F36B26AF2C89D7D400AEFB37 /* KakaoTCloneApp.swift in Sources */,
+				F3A265982C9C3C6700D42082 /* FeedEntity.swift in Sources */,
+				F3A2659A2C9C3E3100D42082 /* FeedDTO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F36B26B72C89D7D400AEFB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F36B26B82C89D7D400AEFB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F36B26BA2C89D7D400AEFB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KakaoTClone/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mySettingApp.KakaoTClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36B26BB2C89D7D400AEFB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KakaoTClone/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mySettingApp.KakaoTClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F36B26A62C89D7D300AEFB37 /* Build configuration list for PBXProject "KakaoTClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B26B72C89D7D400AEFB37 /* Debug */,
+				F36B26B82C89D7D400AEFB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36B26B92C89D7D400AEFB37 /* Build configuration list for PBXNativeTarget "KakaoTClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B26BA2C89D7D400AEFB37 /* Debug */,
+				F36B26BB2C89D7D400AEFB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F36B26BC2C89D7ED00AEFB37 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.5;
+			};
+		};
+		F3DFB97D2C8C29B400D9C22B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F322E3132C8C2DC1006A8815 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAnalytics;
+		};
+		F322E3152C8C37AC006A8815 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFirestore;
+		};
+		F36B26BD2C89D7ED00AEFB37 /* KakaoMapsSDK-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F36B26BC2C89D7ED00AEFB37 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
+			productName = "KakaoMapsSDK-SPM";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F36B26A32C89D7D300AEFB37 /* Project object */;
+}
