@@ -15,6 +15,8 @@
 		F322E3252C930F10006A8815 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322E3242C930F10006A8815 /* MapView.swift */; };
 		F322E3282C930F98006A8815 /* CustomAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322E3272C930F98006A8815 /* CustomAppBar.swift */; };
 		F344B8E92C9AE39F00AB06CC /* AutoFocusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F344B8E82C9AE39F00AB06CC /* AutoFocusTextField.swift */; };
+		F367E9C22C9EA528004ACC9B /* DocumentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367E9C12C9EA528004ACC9B /* DocumentKey.swift */; };
+		F367E9C42C9EAA96004ACC9B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F367E9C32C9EAA96004ACC9B /* .gitignore */; };
 		F36B26AF2C89D7D400AEFB37 /* KakaoTCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B26AE2C89D7D400AEFB37 /* KakaoTCloneApp.swift */; };
 		F36B26B12C89D7D400AEFB37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B26B02C89D7D400AEFB37 /* ContentView.swift */; };
 		F36B26B32C89D7D400AEFB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36B26B22C89D7D400AEFB37 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		F322E3242C930F10006A8815 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F322E3272C930F98006A8815 /* CustomAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppBar.swift; sourceTree = "<group>"; };
 		F344B8E82C9AE39F00AB06CC /* AutoFocusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextField.swift; sourceTree = "<group>"; };
+		F367E9C12C9EA528004ACC9B /* DocumentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentKey.swift; sourceTree = "<group>"; };
+		F367E9C32C9EAA96004ACC9B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F36B26AB2C89D7D400AEFB37 /* KakaoTClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36B26AE2C89D7D400AEFB37 /* KakaoTCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTCloneApp.swift; sourceTree = "<group>"; };
 		F36B26B02C89D7D400AEFB37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		F36B26A22C89D7D300AEFB37 = {
 			isa = PBXGroup;
 			children = (
+				F367E9C32C9EAA96004ACC9B /* .gitignore */,
 				F322E3112C8C2BB0006A8815 /* GoogleService-Info.plist */,
 				F36B26AD2C89D7D400AEFB37 /* KakaoTClone */,
 				F36B26AC2C89D7D400AEFB37 /* Products */,
@@ -172,6 +177,7 @@
 			children = (
 				F36B26BF2C89D81500AEFB37 /* APIKeys.swift */,
 				F37BA18A2C99DB4500C5670D /* Category.swift */,
+				F367E9C12C9EA528004ACC9B /* DocumentKey.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -179,8 +185,8 @@
 		F3E0E6292C95739300755CB9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F344B8E72C9AE38600AB06CC /* Helper */,
 				F36B26B02C89D7D400AEFB37 /* ContentView.swift */,
+				F344B8E72C9AE38600AB06CC /* Helper */,
 				F398B0842C95884F00D8DAB1 /* ViewModel */,
 				F398B0832C95884100D8DAB1 /* View */,
 				F322E3262C930F55006A8815 /* CustomView */,
@@ -326,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F367E9C42C9EAA96004ACC9B /* .gitignore in Resources */,
 				F36B26B62C89D7D400AEFB37 /* Preview Assets.xcassets in Resources */,
 				F36B26B32C89D7D400AEFB37 /* Assets.xcassets in Resources */,
 				F322E3122C8C2BB0006A8815 /* GoogleService-Info.plist in Resources */,
@@ -359,6 +366,7 @@
 				F3A2659E2C9C43F600D42082 /* FeedViewModel.swift in Sources */,
 				F344B8E92C9AE39F00AB06CC /* AutoFocusTextField.swift in Sources */,
 				F322E3252C930F10006A8815 /* MapView.swift in Sources */,
+				F367E9C22C9EA528004ACC9B /* DocumentKey.swift in Sources */,
 				F36B26AF2C89D7D400AEFB37 /* KakaoTCloneApp.swift in Sources */,
 				F3A265982C9C3C6700D42082 /* FeedEntity.swift in Sources */,
 				F3A2659A2C9C3E3100D42082 /* FeedDTO.swift in Sources */,

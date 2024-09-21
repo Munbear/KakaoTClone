@@ -1,10 +1,3 @@
-//
-//  VillageTagUseCase.swift
-//  KakaoTClone
-//
-//  Created by 박도원 on 9/14/24.
-//
-
 import Foundation
 
 

@@ -6,7 +6,7 @@ final class FirestoreService: KakaoTRepositoryInterface{
     private let db = Firestore.firestore()
     
     func fetchVillageTagInfosTest() async throws -> [VillageTagEntity] {
-        let ref = db.collection("areaInfo").document("euZaEVN6Nswji75xdVHQ")
+        let ref = db.collection("areaInfo").document(DocumentKey.villageInfo)
         do {
             let docSnapshot = try await ref.getDocument()
             if let data = docSnapshot.data(), let villageInfoArray = data["areaInfo"] as? [[String: Any]] {
@@ -29,7 +29,7 @@ final class FirestoreService: KakaoTRepositoryInterface{
     }
     
     func fetchFeedList() async throws -> [FeedEntity] {
-        let ref = db.collection("feed").document("jXAXBbGBhZqc4W3RhRAu")
+        let ref = db.collection("feed").document(DocumentKey.feed)
         do {
             let snapshot = try await ref.getDocument()
             if let data = snapshot.data(), let feedDataArray = data["feed"] as? [[String: Any]] {
